@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Custom Components
+import Toolbar from "./components/Toolbar";
+import Menu from "./components/Menu";
+
+// Window Components
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import GitHub from "./components/GitHub";
+import Project from "./components/Project";
+import Resume from "./components/Resume";
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menu: false
+    };
+  }
+
+  onClick = e => {
+    e.preventDefault();
+    if (this.state.menu) {
+      this.setState({
+        menu: false
+      });
+    } else {
+      this.setState({
+        menu: true
+      });
+    }
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <Toolbar onClick={this.onClick} />
+        {this.state.menu && <Menu />}
+        <Contact />
+        <GitHub />
+        <Project />
+        <Resume />
+        <AboutMe />
+      </div>
+    );
+  }
 }
 
 export default App;
