@@ -31,7 +31,11 @@ class Resume extends Component {
           />
         </div>
         <div className="sub-option-bar">
-          <a className="resume-download" href={resume} download>
+          <a
+            className="resume-download"
+            href={resume}
+            download="Richard Braamburg Resume"
+          >
             Download
           </a>
         </div>

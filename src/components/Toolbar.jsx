@@ -1,5 +1,8 @@
 import React from "react";
 
+// Custom Components
+import Clock from "./Clock";
+
 // Fontawesome Imports
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +15,7 @@ const Toolbar = props => {
         <i className="faHome">{home}</i>
         <p className="start-txt">Start</p>
       </button>
-      <div className="clock">00:00</div>
+      <div className="clock"><Clock /></div>
     </div>
   );
 };

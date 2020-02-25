@@ -4,6 +4,7 @@ import "./App.scss";
 // Custom Components
 import Toolbar from "./components/Toolbar";
 import Menu from "./components/Menu";
+import Main from "./components/Main";
 
 // Window Components
 import AboutMe from "./components/AboutMe";
@@ -42,6 +43,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Main />
         <Toolbar onClick={this.onClick} />
         {this.state.menu && <Menu onClick={this.onClick} />}
         {this.state.contact && <Contact onClick={this.onClick} />}

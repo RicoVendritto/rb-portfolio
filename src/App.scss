@@ -69,25 +69,105 @@ body {
     width: 5vw;
     border: 0.5px solid gray;
     margin-right: 0.1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .start-menu {
   height: 30vh;
-  width: 12vw;
+  width: 18vw;
   border: 1px solid black;
-  background-color: pink;
+  background-color: $prm-gray;
   position: fixed;
   bottom: 4vh;
   left: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 
-  .start-btn {
-    width: 99%;
-    height: 25%;
+  .side-filler {
+    height: 100%;
+    width: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .start-text {
+      transform: rotate(-90deg);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 13vh;
+      // border: 1px solid red;
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.7em;
+        font-weight: 900;
+        word-wrap: none;
+        color: $thrd-gray;
+
+        &::first-letter {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .menu-column {
+    height: 30vh;
+    width: 14vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .start-btn {
+      width: 100%;
+      height: 25%;
+      text-align: left;
+      font-size: 1.2em;
+
+      &:first-letter {
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: white;
+        background-color: blue;
+      }
+    }
+  }
+}
+
+.main-desktop {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .main-internet {
+    position: absolute;
+    left: 0;
+    top: 2vh;
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin: 0.5vh;
+      width: 50%;
+      font-size: 0.8em;
+      color: white;
+    }
   }
 }
 
