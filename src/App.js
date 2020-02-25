@@ -16,19 +16,25 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menu: false
+      menu: false,
+      aboutme: false,
+      contact: false,
+      project: false,
+      github: false,
+      resume: false
     };
   }
 
   onClick = e => {
+    const name = e.target.name;
     e.preventDefault();
-    if (this.state.menu) {
+    if (this.state[name]) {
       this.setState({
-        menu: false
+        [name]: false
       });
     } else {
       this.setState({
-        menu: true
+        [name]: true
       });
     }
   };
@@ -37,12 +43,12 @@ class App extends Component {
     return (
       <div className="App">
         <Toolbar onClick={this.onClick} />
-        {this.state.menu && <Menu />}
-        <Contact />
-        <GitHub />
-        <Project />
-        <Resume />
-        <AboutMe />
+        {this.state.menu && <Menu onClick={this.onClick} />}
+        {this.state.contact && <Contact onClick={this.onClick} />}
+        {this.state.github && <GitHub onClick={this.onClick} />}
+        {this.state.project && <Project onClick={this.onClick} />}
+        {this.state.resume && <Resume onClick={this.onClick} />}
+        {this.state.aboutme && <AboutMe onClick={this.onClick} />}
       </div>
     );
   }

@@ -1,18 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
+import resume from "../resources/resume.pdf";
 import { Rnd } from "react-rnd";
+import notepad from "../resources/notepad.ico";
+import exit from "../resources/exit.png";
 
-const style = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  border: "solid 1px #ddd",
-  background: "pink"
-};
-
-const AboutMe = () => {
+const AboutMe = (props) => {
   return (
     <Rnd
-      style={style}
+      className="resume-window"
       default={{
         x: 100,
         y: 100,
@@ -20,7 +15,20 @@ const AboutMe = () => {
         height: 200
       }}
     >
-      About Me
+      <div className="option-bar">
+        <img className="option-type" src={notepad} />
+        <img
+          className="option-close"
+          name="aboutme"
+          onClick={e => props.onClick(e)}
+          src={exit}
+        />
+      </div>
+      <div className="sub-option-bar">
+        <a className="resume-download" href={resume} download>
+          Download
+        </a>
+      </div>
     </Rnd>
   );
 };

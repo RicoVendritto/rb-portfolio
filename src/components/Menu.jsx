@@ -1,13 +1,43 @@
 import React from "react";
 
-const Menu = () => {
+const Menu = props => {
   return (
     <div className="start-menu">
-      <button className="start-btn">About Me</button>
-      <button className="start-btn">Contact</button>
-      <button className="start-btn">Project</button>
-      <button className="start-btn">GitHub</button>
-      <button className="start-btn">Resume</button>
+      <button
+        className="start-btn"
+        name="aboutme"
+        onClick={e => props.onClick(e)}
+      >
+        About Me
+      </button>
+      <button
+        className="start-btn"
+        name="contact"
+        onClick={e => props.onClick(e)}
+      >
+        Contact
+      </button>
+      <button
+        className="start-btn"
+        name="project"
+        onClick={e => props.onClick(e)}
+      >
+        Project
+      </button>
+      <button
+        className="start-btn"
+        name="github"
+        onClick={e => props.onClick(e)}
+      >
+        GitHub
+      </button>
+      <button
+        className="start-btn"
+        name="resume"
+        onClick={e => props.onClick(e)}
+      >
+        Resume
+      </button>
     </div>
   );
 };

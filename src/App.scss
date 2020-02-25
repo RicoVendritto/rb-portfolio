@@ -1,11 +1,28 @@
-$bsc-bckgrnd: hsl(181,100,25);
-$prm-gray: hsl(166,5,66);
+@font-face {
+  font-family: "myfont";
+  src: url("./fonts/micross.ttf");
+  font-family: "test";
+  src: url("./fonts/ms95.ttf");
+}
+
+$bsc-bckgrnd: hsl(181, 100, 25);
+$prm-gray: hsl(166, 5, 66);
+$scnd-gray: hsl(205, 4, 33);
+$thrd-gray: hsl(0, 0, 76);
+$tskbar: hsl(242, 100, 24);
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+}
 
 .App {
   text-align: center;
   background-color: $bsc-bckgrnd;
   height: 100vh;
   width: 100vw;
+  outline: 1px solid red;
+  overflow: hidden;
 }
 
 .toolbar {
@@ -37,11 +54,13 @@ $prm-gray: hsl(166,5,66);
     .faHome {
       margin: 0;
       padding: 0;
+      pointer-events: none;
     }
 
     .start-txt {
       margin: 0;
       padding: 0;
+      pointer-events: none;
     }
   }
 
@@ -69,5 +88,86 @@ $prm-gray: hsl(166,5,66);
   .start-btn {
     width: 99%;
     height: 25%;
+  }
+}
+
+.resume-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid 1px black;
+  background-color: $thrd-gray;
+  overflow: hidden;
+  position: relative;
+  padding: 0.2vh;
+
+  .option-bar {
+    height: 25px;
+    width: 100%;
+    background-color: $tskbar;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .option-type {
+      position: absolute;
+      left: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 20px;
+      width: 20px;
+    }
+
+    .option-close {
+      position: absolute;
+      right: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $prm-gray;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: click;
+      cursor: pointer;
+    }
+  }
+
+  .sub-option-bar {
+    position: relative;
+    height: 25px;
+    width: 100%;
+    margin-bottom: 0;
+
+    .resume-download {
+      position: absolute;
+      left: 2px;
+      bottom: 0px;
+      height: 2vh;
+      padding: 0.2vh;
+      // border: 1px solid red;
+      text-decoration: none;
+      color: black;
+      font-size: 0.9em;
+
+      &:hover {
+        background-color: $prm-gray;
+      }
+
+      &:active {
+        left: 2.2px;
+        bottom: -0.5px;
+      }
+    }
+  }
+
+  .resume-frame {
+    height: 96.5%;
+    width: 99%;
+    margin: 0;
+    padding: 0;
   }
 }
