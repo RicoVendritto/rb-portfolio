@@ -18,7 +18,7 @@ class App extends Component {
     super(props);
     this.state = {
       menu: false,
-      aboutme: false,
+      aboutme: true,
       contact: false,
       project: false,
       github: false,

@@ -14,15 +14,21 @@ class Clock extends Component {
   };
 
   renderClock = () => {
-    console.log("time check");
     const date = new Date();
     const hours = date.getHours();
-    const minutes = date.getMinutes();
+    const minutes = this.getMinutes(date);
     const time = `${hours}:${minutes}`;
-    console.log(time);
     this.setState({
       time
     });
+  };
+
+  getMinutes = date => {
+    if (date.getMinutes().length < 1) {
+      return `0${date.getMinutes()}`;
+    } else {
+      return date.getMinutes();
+    }
   };
 
   render() {

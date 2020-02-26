@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import resume from "../resources/resume.pdf";
 import { Rnd } from "react-rnd";
 import notepad from "../resources/notepad.ico";
 import exit from "../resources/exit.png";
 
-const GitHub = (props) => {
+// Custom Components
+import GitHubWidget from "./GitHubWidget";
+
+const GitHub = props => {
   return (
     <Rnd
       className="resume-window"
@@ -25,9 +27,10 @@ const GitHub = (props) => {
         />
       </div>
       <div className="sub-option-bar">
-        <a className="resume-download" href={resume} download>
-          Download
-        </a>
+        <a>GITHUB</a>
+      </div>
+      <div className="resume-frame">
+        <GitHubWidget />
       </div>
     </Rnd>
   );

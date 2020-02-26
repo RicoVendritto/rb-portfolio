@@ -9,10 +9,11 @@ $bsc-bckgrnd: hsl(181, 100, 25);
 $prm-gray: hsl(166, 5, 66);
 $scnd-gray: hsl(205, 4, 33);
 $thrd-gray: hsl(0, 0, 76);
+$frth-gray: hsl(0, 0, 48);
 $tskbar: hsl(242, 100, 24);
 
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
 }
 
@@ -96,6 +97,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    background-color: $frth-gray;
 
     .start-text {
       transform: rotate(-90deg);
@@ -104,7 +106,6 @@ body {
       justify-content: center;
       align-items: flex-start;
       margin-bottom: 13vh;
-      // border: 1px solid red;
 
       p {
         margin: 0;
@@ -180,7 +181,7 @@ body {
   background-color: $thrd-gray;
   overflow: hidden;
   position: relative;
-  padding: 0.2vh;
+  padding: 0.3vh;
 
   .option-bar {
     height: 25px;
@@ -228,7 +229,6 @@ body {
       bottom: 0px;
       height: 2vh;
       padding: 0.2vh;
-      // border: 1px solid red;
       text-decoration: none;
       color: black;
       font-size: 0.9em;
@@ -245,9 +245,73 @@ body {
   }
 
   .resume-frame {
-    height: 96.5%;
-    width: 99%;
+    height: 90.4%;
+    width: 99.5%;
     margin: 0;
     padding: 0;
+    border: 1px solid aquamarine;
+
+    #github-card {
+      // background-color: white;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .aboutme-wrapper {
+    border: 1px solid aquamarine;
+    background-color: white;
+    padding: 1vh 1vw;
+    height: 88%;
+
+    .aboutme-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 2vh;
+
+      .profile-pic {
+        height: 40%;
+        width: 40%;
+        min-height: 20vh;
+        min-width: 20vh;
+        max-height: 40vh;
+        max-width: 40vh;
+        border-radius: 5%;
+        box-shadow: 1px 1px 5px black;
+      }
+
+      .aboutme-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .details {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+          border: 1px solid aquamarine;
+
+          i {
+            margin-right: 10%;
+          }
+
+          i,
+          a {
+            display: inline-block;
+            font-size: 1.8vh;
+          }
+        }
+      }
+    }
+  }
+
+  .aboutme-text {
+    margin-top: 4vh;
+    text-align: left;
   }
 }

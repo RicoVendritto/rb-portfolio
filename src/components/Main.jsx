@@ -8,6 +8,7 @@ const Main = () => {
         <img src={internet} />
         <p>Internet Explorer</p>
       </div>
+      <div id="github-card" data-username="RicoVendritto"></div>
     </main>
   );
 };
