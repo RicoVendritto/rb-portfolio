@@ -24,7 +24,7 @@ class Clock extends Component {
   };
 
   getMinutes = date => {
-    if (date.getMinutes().length < 1) {
+    if (date.getMinutes() < 10) {
       return `0${date.getMinutes()}`;
     } else {
       return date.getMinutes();

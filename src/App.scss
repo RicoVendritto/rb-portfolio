@@ -13,7 +13,7 @@ $frth-gray: hsl(0, 0, 48);
 $tskbar: hsl(242, 100, 24);
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
 }
 
@@ -41,7 +41,7 @@ body {
 
   .start-btn {
     height: 90%;
-    width: 5vw;
+    width: 8vw;
     background-color: $prm-gray;
     border: 1px solid black;
     box-shadow: 1px 1px 1px black;
@@ -245,21 +245,23 @@ body {
   }
 
   .resume-frame {
-    height: 90.4%;
-    width: 99.5%;
-    margin: 0;
-    padding: 0;
-    border: 1px solid aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 89%;
 
     #github-card {
-      // background-color: white;
       height: 100%;
+      min-width: 25vw;
       width: 100%;
+      background-color: transparent;
     }
   }
 
   .aboutme-wrapper {
-    border: 1px solid aquamarine;
     background-color: white;
     padding: 1vh 1vw;
     height: 88%;
@@ -287,6 +289,19 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
+        width: 50%;
+
+        h4 {
+          margin: 0;
+          padding: 0;
+          font-weight: 300;
+          display: inline-block;
+          font-size: 3vh;
+
+          &::first-letter {
+            font-weight: 900;
+          }
+        }
 
         .details {
           display: flex;
@@ -294,10 +309,10 @@ body {
           justify-content: flex-start;
           align-items: center;
           width: 100%;
-          border: 1px solid aquamarine;
+          margin-top: 0.2vh;
 
-          i {
-            margin-right: 10%;
+          a {
+            margin-left: 10%;
           }
 
           i,
@@ -313,5 +328,18 @@ body {
   .aboutme-text {
     margin-top: 4vh;
     text-align: left;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: gray;
+      left: 0;
+      top: -1.5vh;
+    }
   }
 }
+
+

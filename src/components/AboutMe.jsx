@@ -1,19 +1,19 @@
 import React from "react";
 import { Rnd } from "react-rnd";
-import notepad from "../resources/notepad.ico";
-import exit from "../resources/exit.png";
 
 // Resources
 import me from "../resources/me.png";
+import aboutme from "../resources/aboutme.ico";
+import exit from "../resources/exit.png";
 
 // Fontawesome
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPhoneSquareAlt } from "@fortawesome/free-solid-svg-icons";
 import { faSkype } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-const email = <FontAwesomeIcon icon={faPaperPlane} />;
+const email = <FontAwesomeIcon icon={faAt} />;
 const linkedin = <FontAwesomeIcon icon={faLinkedin} />;
 const phone = <FontAwesomeIcon icon={faPhoneSquareAlt} />;
 const skype = <FontAwesomeIcon icon={faSkype} />;
@@ -22,6 +22,7 @@ const github = <FontAwesomeIcon icon={faGithubSquare} />;
 const AboutMe = props => {
   return (
     <Rnd
+      id="aboutme-window"
       className="resume-window"
       default={{
         x: 100,
@@ -31,7 +32,7 @@ const AboutMe = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={notepad} />
+        <img className="option-type" src={aboutme} />
         <img
           className="option-close"
           name="aboutme"
@@ -48,7 +49,8 @@ const AboutMe = props => {
         <div className="aboutme-title">
           <img className="profile-pic" src={me} />
           <div className="aboutme-right">
-            <h4>Richard Braamburg</h4>
+            <h4>Richard</h4>
+            <h4>Braamburg</h4>
             <div className="details">
               <i>{email}</i>
               <a href="mailto:richardbraamburg@gmail.com">Email</a>

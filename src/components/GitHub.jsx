@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Rnd } from "react-rnd";
-import notepad from "../resources/notepad.ico";
+import github from "../resources/github.ico";
 import exit from "../resources/exit.png";
 
 // Custom Components
@@ -13,12 +13,12 @@ const GitHub = props => {
       default={{
         x: 100,
         y: 100,
-        width: 320,
-        height: 200
+        width: 375,
+        height: 460
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={notepad} />
+        <img className="option-type" src={github} />
         <img
           className="option-close"
           name="github"
@@ -27,11 +27,20 @@ const GitHub = props => {
         />
       </div>
       <div className="sub-option-bar">
-        <a>GITHUB</a>
+        <a
+          className="resume-download"
+          href="https://github.com/RicoVendritto"
+          target="_blank"
+        >
+          GitHub
+        </a>
       </div>
       <div className="resume-frame">
         <GitHubWidget />
       </div>
+      {/* <iframe> */}
+      <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
+      {/* </iframe> */}
     </Rnd>
   );
 };

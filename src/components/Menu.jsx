@@ -13,35 +13,50 @@ const Menu = props => {
         <button
           className="start-btn"
           name="aboutme"
-          onClick={e => props.onClick(e)}
+          onClick={e => {
+            props.onClick(e);
+            props.closeStart(e);
+          }}
         >
           About Me
         </button>
         <button
           className="start-btn"
           name="contact"
-          onClick={e => props.onClick(e)}
+          onClick={e => {
+            props.onClick(e);
+            props.closeStart(e);
+          }}
         >
           Contact
         </button>
         <button
           className="start-btn"
           name="project"
-          onClick={e => props.onClick(e)}
+          onClick={e => {
+            props.onClick(e);
+            props.closeStart(e);
+          }}
         >
           Project
         </button>
         <button
           className="start-btn"
           name="github"
-          onClick={e => props.onClick(e)}
+          onClick={e => {
+            props.onClick(e);
+            props.closeStart(e);
+          }}
         >
           GitHub
         </button>
         <button
           className="start-btn"
           name="resume"
-          onClick={e => props.onClick(e)}
+          onClick={e => {
+            props.onClick(e);
+            props.closeStart(e);
+          }}
         >
           Resume
         </button>

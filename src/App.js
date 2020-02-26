@@ -5,6 +5,7 @@ import "./App.scss";
 import Toolbar from "./components/Toolbar";
 import Menu from "./components/Menu";
 import Main from "./components/Main";
+import GitHubWidget from "./components/GitHubWidget";
 
 // Window Components
 import AboutMe from "./components/AboutMe";
@@ -18,13 +19,29 @@ class App extends Component {
     super(props);
     this.state = {
       menu: false,
-      aboutme: true,
+      aboutme: false,
       contact: false,
       project: false,
-      github: false,
+      github: true,
       resume: false
     };
   }
+
+  componentDidMount = () => {
+    const window = document.querySelector(".main-desktop");
+    window.addEventListener("click", this.closeStart);
+  };
+
+  closeStart = e => {
+    if (e) {
+      e.preventDefault();
+    }
+    if (this.state.menu) {
+      this.setState({
+        menu: false
+      });
+    }
+  };
 
   onClick = e => {
     const name = e.target.name;
@@ -45,12 +62,15 @@ class App extends Component {
       <div className="App">
         <Main />
         <Toolbar onClick={this.onClick} />
-        {this.state.menu && <Menu onClick={this.onClick} />}
+        {this.state.menu && (
+          <Menu onClick={this.onClick} closeStart={this.closeStart} />
+        )}
         {this.state.contact && <Contact onClick={this.onClick} />}
         {this.state.github && <GitHub onClick={this.onClick} />}
         {this.state.project && <Project onClick={this.onClick} />}
         {this.state.resume && <Resume onClick={this.onClick} />}
         {this.state.aboutme && <AboutMe onClick={this.onClick} />}
+        <GitHubWidget />
       </div>
     );
   }
