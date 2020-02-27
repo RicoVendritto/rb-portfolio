@@ -1,22 +1,27 @@
 import React, { Component } from "react";
-import resume from "../resources/resume.pdf";
 import { Rnd } from "react-rnd";
-import notepad from "../resources/notepad.ico";
+
+// Custom Components
+import ContactForm from "./ContactForm";
+
+// Custom Resources
+import contactme from "../resources/contactme.ico";
 import exit from "../resources/exit.png";
 
-const Contact = (props) => {
+const Contact = props => {
   return (
     <Rnd
+      style={{ zIndex: 1 }}
       className="resume-window"
       default={{
-        x: 100,
-        y: 100,
+        x: 500,
+        y: 400,
         width: 320,
-        height: 200
+        height: 260
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={notepad} />
+        <img className="option-type" src={contactme} />
         <img
           className="option-close"
           name="contact"
@@ -25,10 +30,13 @@ const Contact = (props) => {
         />
       </div>
       <div className="sub-option-bar">
-        <a className="resume-download" href={resume} download>
-          Download
+        <a className="resume-download" href="#">
+          Contact
         </a>
       </div>
+      <section>
+        <ContactForm />
+      </section>
     </Rnd>
   );
 };

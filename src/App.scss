@@ -176,6 +176,7 @@ body {
           text-align: left;
           font-size: 1em;
           background-color: $thrd-gray;
+          z-index: 5;
 
           &:first-letter {
             text-decoration: underline;
@@ -384,6 +385,44 @@ body {
       background-color: gray;
       left: 0;
       top: -1.5vh;
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 99%;
+
+    .form-input {
+      width: 99%;
+    }
+
+    .form-text {
+      width: 99%;
+      height: 5vh;
+      word-wrap: ;
+    }
+
+    .form-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 2vh;
+      width: 100%;
+
+      .contact-button {
+        background-color: $prm-gray;
+        color: black;
+        border: 0.5px solid black;
+        box-shadow: 0.5px 0.5px 1px black;
+      }
+
+      .email-message {
+        font-size: 0.8em;
+      }
     }
   }
 }

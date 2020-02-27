@@ -11,6 +11,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "drag-resize-forvue": "^1.0.1",
+    "emailjs-com": "^2.4.1",
     "github-card": "^1.2.1",
     "github-profile-card": "^3.1.0",
     "pdf-viewer-reactjs": "^2.0.2",
