@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Rnd } from "react-rnd";
 import github from "../resources/github.ico";
 import exit from "../resources/exit.png";
@@ -38,9 +38,9 @@ const GitHub = props => {
       <div className="resume-frame">
         <GitHubWidget />
       </div>
-      {/* <iframe className="resume-iframe-script"> */}
+      <iframe className="resume-iframe-script">
       <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
-      {/* </iframe> */}
+      </iframe>
     </Rnd>
   );
 };

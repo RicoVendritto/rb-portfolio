@@ -1,5 +1,4 @@
 import React from "react";
-import resume from "../resources/resume.pdf";
 import { Rnd } from "react-rnd";
 import internet from "../resources/internet.ico";
 import exit from "../resources/exit.png";
