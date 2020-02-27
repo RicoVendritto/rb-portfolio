@@ -11,8 +11,13 @@ import GitHubWidget from "./components/GitHubWidget";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import GitHub from "./components/GitHub";
-import Project from "./components/Project";
+import Project from "./components/Project2";
 import Resume from "./components/Resume";
+import Project1 from "./components/Project1";
+import Project2 from "./components/Project2";
+import Project3 from "./components/Project3";
+import Project4 from "./components/Project4";
+import Project5 from "./components/Project5";
 
 class App extends Component {
   constructor(props) {
@@ -20,10 +25,15 @@ class App extends Component {
     this.state = {
       menu: false,
       aboutme: false,
-      contact: true,
+      contact: false,
       project: false,
-      github: true,
-      resume: false
+      github: false,
+      resume: false,
+      project1: false,
+      project2: false,
+      project3: false,
+      project4: false,
+      project5: false
     };
   }
 
@@ -70,6 +80,11 @@ class App extends Component {
         {this.state.project && <Project onClick={this.onClick} />}
         {this.state.resume && <Resume onClick={this.onClick} />}
         {this.state.aboutme && <AboutMe onClick={this.onClick} />}
+        {this.state.project1 && <Project1 onClick={this.onClick} />}
+        {this.state.project2 && <Project2 onClick={this.onClick} />}
+        {this.state.project3 && <Project3 onClick={this.onClick} />}
+        {this.state.project4 && <Project4 onClick={this.onClick} />}
+        {this.state.project5 && <Project5 onClick={this.onClick} />}
         <GitHubWidget />
       </div>
     );

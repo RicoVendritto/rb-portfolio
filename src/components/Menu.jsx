@@ -67,7 +67,10 @@ class Menu extends Component {
             Project
             <img className="menu-arrow" src={arrow} />
             {this.state.projectmenu && (
-              <ProjectsMenu closeStart={this.props.closeStart} />
+              <ProjectsMenu
+                onClick={this.props.onClick}
+                closeStart={this.props.closeStart}
+              />
             )}
           </button>
           <button

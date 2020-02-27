@@ -8,6 +8,8 @@ const Main = () => {
         <img src={internet} />
         <p>Internet Explorer</p>
       </div>
+
+      
     </main>
   );
 };

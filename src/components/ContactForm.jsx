@@ -8,7 +8,8 @@ class ContactForm extends Component {
         name: "",
         email: "",
         phone: "",
-        message: ""
+        message: "",
+        honeypot: true
       },
       emailmessage: null
     };
@@ -26,7 +27,7 @@ class ContactForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    if (!this.state.content.honeypot) {
+    if (this.state.content.honeypot) {
       const template = "template_CMVqNTwQ";
       this.sendEmail(template, this.state.content);
     } else {
