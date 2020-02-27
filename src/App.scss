@@ -146,6 +146,48 @@ body {
         background-color: blue;
       }
     }
+
+    .projects {
+      position: relative;
+
+      .menu-arrow {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 2%;
+        top: 45%;
+        transform: translateX(-50%);
+        height: 1vh;
+      }
+
+      .project-menu {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: -15.2vw;
+        bottom: 0;
+        height: 20vh;
+        width: 15vw;
+        border: 1px solid black;
+
+        .project-btn {
+          width: 100%;
+          height: 20%;
+          text-align: left;
+          font-size: 1em;
+          background-color: $thrd-gray;
+
+          &:first-letter {
+            text-decoration: underline;
+          }
+
+          &:hover {
+            color: white;
+            background-color: blue;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -345,5 +387,3 @@ body {
     }
   }
 }
-
-

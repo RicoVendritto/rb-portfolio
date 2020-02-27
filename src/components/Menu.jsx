@@ -1,5 +1,11 @@
 import React from "react";
 
+// Custom Components
+import ProjectsMenu from "./ProjectsMenu";
+
+// Custom Resources
+import arrow from "../resources/arrow.png";
+
 const Menu = props => {
   return (
     <div className="start-menu">
@@ -31,14 +37,16 @@ const Menu = props => {
           Contact
         </button>
         <button
-          className="start-btn"
-          name="project"
+          className="start-btn projects"
+          name="projects"
           onClick={e => {
             props.onClick(e);
             props.closeStart(e);
           }}
         >
           Project
+          <img className="menu-arrow" src={arrow} />
+          <ProjectsMenu />
         </button>
         <button
           className="start-btn"
