@@ -135,6 +135,7 @@ body {
       height: 25%;
       text-align: left;
       font-size: 1.2em;
+      background-color: $thrd-gray;
 
       &:first-letter {
         text-decoration: underline;
@@ -244,6 +245,10 @@ body {
     }
   }
 
+  .resume-iframe-script {
+    display: none;
+  }
+
   .resume-frame {
     display: flex;
     flex-direction: column;
@@ -255,7 +260,6 @@ body {
 
     #github-card {
       height: 100%;
-      min-width: 25vw;
       width: 100%;
       background-color: transparent;
     }
