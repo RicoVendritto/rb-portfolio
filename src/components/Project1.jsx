@@ -26,16 +26,16 @@ const Project1 = props => {
       <div className="sub-option-bar">
         <a
           className="resume-download"
-          href="http://championsleague-followyourteam.surge.sh"
+          href="https://championsleague-followyourteam.surge.sh/"
           target="_blank"
         >
           Project 1
         </a>
       </div>
-      <iframe
+      <embed
         className="project-window project1"
-        src="http://championsleague-followyourteam.surge.sh"
-      ></iframe>
+        src="https://championsleague-followyourteam.surge.sh/"
+      ></embed>
     </Rnd>
   );
 };

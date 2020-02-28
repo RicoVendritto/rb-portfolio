@@ -26,7 +26,7 @@ const Project3 = props => {
       <div className="sub-option-bar">
         <a
           className="resume-download"
-          href="http://raysp3.surge.sh"
+          href="https://raysp3.surge.sh"
           target="_blank"
         >
           Project 3
@@ -34,7 +34,7 @@ const Project3 = props => {
       </div>
       <iframe
         className="project-window project3"
-        src="http://raysp3.surge.sh"
+        src="https://raysp3.surge.sh"
       ></iframe>
     </Rnd>
   );
