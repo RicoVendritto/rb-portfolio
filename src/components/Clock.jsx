@@ -32,7 +32,7 @@ class Clock extends Component {
   };
 
   render() {
-    return <p>{this.state.time}</p>;
+    return <p className="clock-icon">{this.state.time}</p>;
   }
 }
 
