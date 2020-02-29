@@ -26,7 +26,7 @@ const Project4 = props => {
       <div className="sub-option-bar">
         <a
           className="resume-download"
-          href="http://iedb-deploy.s3-website-us-east-1.amazonaws.com/"
+          href="https://d18x4f8ekbpqmh.cloudfront.net/"
           target="_blank"
         >
           Project 4
@@ -34,7 +34,7 @@ const Project4 = props => {
       </div>
       <iframe
         className="project-window project4"
-        src="http://iedb-deploy.s3-website-us-east-1.amazonaws.com/"
+        src="https://d18x4f8ekbpqmh.cloudfront.net/"
       ></iframe>
     </Rnd>
   );
