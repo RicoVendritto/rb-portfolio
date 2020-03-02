@@ -8,10 +8,10 @@ const Project3 = props => {
     <Rnd
       className="resume-window"
       default={{
-        x: 100,
-        y: 100,
-        width: 320,
-        height: 200
+        x: 160,
+        y: 160,
+        width: 420,
+        height: 300
       }}
     >
       <div className="option-bar">
