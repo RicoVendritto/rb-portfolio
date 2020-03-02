@@ -29,7 +29,7 @@ const Project2 = props => {
           href="https://cold-beer-stomach.surge.sh/"
           target="_blank"
         >
-          Project 2
+          Beer & Brewery App
         </a>
       </div>
       <iframe

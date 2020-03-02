@@ -29,7 +29,7 @@ const Project1 = props => {
           href="https://championsleague-followyourteam.surge.sh/"
           target="_blank"
         >
-          Project 1
+          Champions League - Follow Your Team
         </a>
       </div>
       <embed

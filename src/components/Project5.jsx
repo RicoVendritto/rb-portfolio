@@ -29,7 +29,7 @@ const Project5 = props => {
           href="https://cornerbistro.surge.sh"
           target="_blank"
         >
-          Project 5
+          Cornerbistro Colab
         </a>
       </div>
       <iframe
