@@ -5,7 +5,7 @@ import "./App.scss";
 import Toolbar from "./components/Toolbar";
 import Menu from "./components/Menu";
 import Main from "./components/Main";
-import GitHubWidget from "./components/GitHubWidget";
+// import GitHubWidget from "./components/GitHubWidget";
 
 // Window Components
 import AboutMe from "./components/AboutMe";
@@ -20,16 +20,17 @@ import Project4 from "./components/Project4";
 import Project5 from "./components/Project5";
 import Overview from "./components/Overview";
 import Skills from "./components/Skills";
+import Internet from "./components/Internet";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menu: true,
+      menu: false,
       aboutme: false,
       contact: false,
       project: false,
-      github: true,
+      github: false,
       resume: false,
       project1: false,
       project2: false,
@@ -37,7 +38,8 @@ class App extends Component {
       project4: false,
       project5: false,
       overview: false,
-      skills: true
+      skills: false,
+      internet: true
     };
   }
 
@@ -58,6 +60,8 @@ class App extends Component {
   };
 
   onClick = e => {
+    console.log("onclick function");
+    console.log(e);
     const name = e.target.name;
     e.preventDefault();
     if (this.state[name]) {
@@ -91,7 +95,7 @@ class App extends Component {
         {this.state.project5 && <Project5 onClick={this.onClick} />}
         {this.state.overview && <Overview onClick={this.onClick} />}
         {this.state.skills && <Skills onClick={this.onClick} />}
-        <GitHubWidget />
+        {this.state.internet && <Internet onClick={this.onClick} />}
       </div>
     );
   }
