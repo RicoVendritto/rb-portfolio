@@ -57,14 +57,14 @@ class Menu extends Component {
           >
             Contact
           </button>
-          <button
+          <div
             className="start-btn projects"
             name="projects"
             onClick={e => {
               this.showProjects(e);
             }}
           >
-            Project
+            <span>Projects</span>
             <img className="menu-arrow" src={arrow} />
             {this.state.projectmenu && (
               <ProjectsMenu
@@ -72,7 +72,7 @@ class Menu extends Component {
                 closeStart={this.props.closeStart}
               />
             )}
-          </button>
+          </div>
           <button
             className="start-btn"
             name="github"
