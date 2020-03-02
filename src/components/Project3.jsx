@@ -29,7 +29,14 @@ const Project3 = props => {
           href="https://raysp3.surge.sh"
           target="_blank"
         >
-          Foodstagram
+          Project 3
+        </a>
+        <a
+          className="github-source"
+          href="https://github.com/RicoVendritto/Project-3"
+          target="_blank"
+        >
+          GitHub
         </a>
       </div>
       <iframe

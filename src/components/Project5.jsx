@@ -1,5 +1,8 @@
 import React from "react";
 import { Rnd } from "react-rnd";
+
+// Custom Resources
+
 import internet from "../resources/internet.ico";
 import exit from "../resources/exit.png";
 
@@ -29,7 +32,14 @@ const Project5 = props => {
           href="https://cornerbistro.surge.sh"
           target="_blank"
         >
-          Cornerbistro Colab
+          UXDI Colab
+        </a>
+        <a
+          className="github-source"
+          href="https://github.com/RicoVendritto/Project_UX_SEI"
+          target="_blank"
+        >
+          GitHub
         </a>
       </div>
       <iframe

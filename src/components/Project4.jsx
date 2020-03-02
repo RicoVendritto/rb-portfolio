@@ -29,7 +29,14 @@ const Project4 = props => {
           href="https://d18x4f8ekbpqmh.cloudfront.net/"
           target="_blank"
         >
-          IEDB - Int. EDM Database
+          Project 4
+        </a>
+        <a
+          className="github-source"
+          href="https://github.com/RicoVendritto/Project-4"
+          target="_blank"
+        >
+          GitHub
         </a>
       </div>
       <iframe

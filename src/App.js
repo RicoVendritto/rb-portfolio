@@ -18,6 +18,8 @@ import Project2 from "./components/Project2";
 import Project3 from "./components/Project3";
 import Project4 from "./components/Project4";
 import Project5 from "./components/Project5";
+import Overview from "./components/Overview";
+import Skills from "./components/Skills";
 
 class App extends Component {
   constructor(props) {
@@ -27,13 +29,15 @@ class App extends Component {
       aboutme: false,
       contact: false,
       project: false,
-      github: false,
+      github: true,
       resume: false,
       project1: false,
       project2: false,
       project3: false,
       project4: false,
-      project5: false
+      project5: false,
+      overview: false,
+      skills: true
     };
   }
 
@@ -70,7 +74,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Main />
+        <Main onClick={this.onClick} />
         <Toolbar onClick={this.onClick} />
         {this.state.menu && (
           <Menu onClick={this.onClick} closeStart={this.closeStart} />
@@ -85,6 +89,8 @@ class App extends Component {
         {this.state.project3 && <Project3 onClick={this.onClick} />}
         {this.state.project4 && <Project4 onClick={this.onClick} />}
         {this.state.project5 && <Project5 onClick={this.onClick} />}
+        {this.state.overview && <Overview onClick={this.onClick} />}
+        {this.state.skills && <Skills onClick={this.onClick} />}
         <GitHubWidget />
       </div>
     );

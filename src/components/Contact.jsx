@@ -14,8 +14,8 @@ const Contact = props => {
       style={{ zIndex: 1 }}
       className="resume-window"
       default={{
-        x: 500,
-        y: 400,
+        x: 250,
+        y: 200,
         width: 320,
         height: 260
       }}
@@ -30,7 +30,10 @@ const Contact = props => {
         />
       </div>
       <div className="sub-option-bar">
-        <a className="resume-download" href="#">
+        <a
+          className="resume-download"
+          href="mailto:richard.braamburg@gmail.com"
+        >
           Contact
         </a>
       </div>

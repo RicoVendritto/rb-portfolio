@@ -29,7 +29,14 @@ const Project2 = props => {
           href="https://cold-beer-stomach.surge.sh/"
           target="_blank"
         >
-          Beer & Brewery App
+          Project 2
+        </a>
+        <a
+          className="github-source"
+          href="https://github.com/RicoVendritto/project-2"Ï
+          target="_blank"
+        >
+          GitHub
         </a>
       </div>
       <iframe
