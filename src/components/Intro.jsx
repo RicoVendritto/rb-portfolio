@@ -37,7 +37,7 @@ const Intro = props => {
             </p>
             <p>&#8226; To start, click on start in the lower-left corner</p>
             <p>
-              &#8226; This window, and all other windows, can be closed by pressing the 'X' in the
+              &#8226; This window, and all other windows, can be closed by clicking the 'X' in the
               right-upper corner
             </p>
           </div>
