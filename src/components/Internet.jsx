@@ -28,13 +28,13 @@ const Contact = props => {
       </div>
       <div className="sub-option-bar">
         <a className="resume-download" href="#">
-          Skills
+          Internet Explorer
         </a>
       </div>
       <section className="internet-window">
         <iframe
           className="internet-frame"
-          src="https://richardbraamburg.me/archive/memory_game/index.html"
+          src="https://richardbraamburg.me/archive/pixart/index.html"
         ></iframe>
       </section>
     </Rnd>

@@ -5,13 +5,11 @@ import "./App.scss";
 import Toolbar from "./components/Toolbar";
 import Menu from "./components/Menu";
 import Main from "./components/Main";
-// import GitHubWidget from "./components/GitHubWidget";
 
 // Window Components
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import GitHub from "./components/GitHub";
-import Project from "./components/Project2";
 import Resume from "./components/Resume";
 import Project1 from "./components/Project1";
 import Project2 from "./components/Project2";
@@ -29,7 +27,6 @@ class App extends Component {
       menu: false,
       aboutme: false,
       contact: false,
-      project: false,
       github: false,
       resume: false,
       project1: false,
@@ -38,8 +35,8 @@ class App extends Component {
       project4: false,
       project5: false,
       overview: false,
-      skills: false,
-      internet: true
+      skills: true,
+      internet: false
     };
   }
 
@@ -85,7 +82,6 @@ class App extends Component {
         )}
         {this.state.contact && <Contact onClick={this.onClick} />}
         {this.state.github && <GitHub onClick={this.onClick} />}
-        {this.state.project && <Project onClick={this.onClick} />}
         {this.state.resume && <Resume onClick={this.onClick} />}
         {this.state.aboutme && <AboutMe onClick={this.onClick} />}
         {this.state.project1 && <Project1 onClick={this.onClick} />}

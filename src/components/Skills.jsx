@@ -13,8 +13,8 @@ const Contact = props => {
       default={{
         x: 250,
         y: 200,
-        width: 420,
-        height: 340
+        width: 365,
+        height: "45vh"
       }}
     >
       <div className="option-bar">

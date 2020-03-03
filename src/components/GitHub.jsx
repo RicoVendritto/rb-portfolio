@@ -39,7 +39,8 @@ const GitHub = props => {
         <GitHubWidget />
       </div>
       <iframe className="resume-iframe-script">
-      <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
+        <div id="github-card" data-username="RicoVendritto"></div>
+        <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
       </iframe>
     </Rnd>
   );
