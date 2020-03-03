@@ -5,7 +5,7 @@ import { Rnd } from "react-rnd";
 import ieloader from "../resources/ieloader.ico";
 import exit from "../resources/exit.png";
 
-const Contact = props => {
+const Internet = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
@@ -41,4 +41,4 @@ const Contact = props => {
   );
 };
 
-export default Contact;
+export default Internet;

@@ -23,6 +23,7 @@ const AboutMe = props => {
   return (
     <Rnd
       id="aboutme-window"
+      style={{ zIndex: 1 }}
       className="resume-window"
       default={{
         x: 100,

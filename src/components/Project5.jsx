@@ -9,6 +9,7 @@ import exit from "../resources/exit.png";
 const Project5 = props => {
   return (
     <Rnd
+      style={{ zIndex: 1 }}
       className="resume-window"
       default={{
         x: 200,

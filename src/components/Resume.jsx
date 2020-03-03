@@ -13,6 +13,7 @@ class Resume extends Component {
   render() {
     return (
       <Rnd
+        style={{ zIndex: 1 }}
         className="resume-window"
         default={{
           x: 100,

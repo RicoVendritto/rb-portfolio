@@ -19,6 +19,7 @@ import Project5 from "./components/Project5";
 import Overview from "./components/Overview";
 import Skills from "./components/Skills";
 import Internet from "./components/Internet";
+import Intro from "./components/Intro";
 
 class App extends Component {
   constructor(props) {
@@ -35,8 +36,9 @@ class App extends Component {
       project4: false,
       project5: false,
       overview: false,
-      skills: true,
-      internet: false
+      skills: false,
+      internet: false,
+      intro: true
     };
   }
 
@@ -92,6 +94,7 @@ class App extends Component {
         {this.state.overview && <Overview onClick={this.onClick} />}
         {this.state.skills && <Skills onClick={this.onClick} />}
         {this.state.internet && <Internet onClick={this.onClick} />}
+        {this.state.intro && <Intro onClick={this.onClick} />}
       </div>
     );
   }

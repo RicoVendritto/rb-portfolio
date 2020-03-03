@@ -9,6 +9,7 @@ import GitHubWidget from "./GitHubWidget";
 const GitHub = props => {
   return (
     <Rnd
+      style={{ zIndex: 1 }}
       className="resume-window"
       default={{
         x: 100,

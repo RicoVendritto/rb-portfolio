@@ -6,6 +6,7 @@ import exit from "../resources/exit.png";
 const Project2 = props => {
   return (
     <Rnd
+      style={{ zIndex: 1 }}
       className="resume-window"
       default={{
         x: 140,
@@ -33,7 +34,8 @@ const Project2 = props => {
         </a>
         <a
           className="github-source"
-          href="https://github.com/RicoVendritto/project-2"Ï
+          href="https://github.com/RicoVendritto/project-2"
+          Ï
           target="_blank"
         >
           GitHub
