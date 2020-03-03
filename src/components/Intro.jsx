@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Rnd } from "react-rnd";
 
 // Custom Resources
