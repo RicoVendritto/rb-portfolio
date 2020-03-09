@@ -28,7 +28,7 @@ class App extends Component {
       menu: false,
       aboutme: false,
       contact: false,
-      github: false,
+      github: true,
       resume: false,
       project1: false,
       project2: false,
@@ -42,10 +42,10 @@ class App extends Component {
     };
   }
 
-  componentDidMount = () => {
-    const window = document.querySelector(".main-desktop");
-    window.addEventListener("click", this.closeStart);
-  };
+  // componentDidMount = () => {
+  //   const window = document.querySelector(".main-desktop");
+  //   window.addEventListener("click", this.closeStart);
+  // };
 
   closeStart = e => {
     if (e) {

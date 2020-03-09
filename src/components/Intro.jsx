@@ -37,8 +37,19 @@ const Intro = props => {
             </p>
             <p>&#8226; To start, click on start in the lower-left corner</p>
             <p>
-              &#8226; This window, and all other windows, can be closed by clicking the 'X' in the
-              right-upper corner
+              &#8226; This window, and all other windows, can be closed by
+              clicking the 'X' in the right-upper corner
+            </p>
+            <p>
+              &#8226; To see the source code of this portfolio, please visit{" "}
+              <span>
+                <a
+                  href="https://github.com/RicoVendritto/rb-portfolio"
+                  target="_blank"
+                >
+                  my GitHub
+                </a>
+              </span>
             </p>
           </div>
         </div>
