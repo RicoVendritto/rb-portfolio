@@ -4,6 +4,9 @@ import React from "react";
 import internet from "../resources/internet.ico";
 import skills from "../resources/skills.ico";
 
+// Custom Component
+import Logo from "./Overview";
+
 const Main = props => {
   return (
     <main className="main-desktop">
@@ -15,6 +18,7 @@ const Main = props => {
         <img src={skills} name="skills" onClick={e => props.onClick(e)} />
         <p>Skills</p>
       </div>
+      <Logo />
     </main>
   );
 };

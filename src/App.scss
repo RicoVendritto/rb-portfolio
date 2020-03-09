@@ -287,6 +287,14 @@ body {
       color: white;
     }
   }
+
+  #watercolor-background {
+    position: fixed;
+    right: 0;
+    top: 70vh;
+    transform: translateY(-50%);
+    opacity: 0.15;
+  }
 }
 
 .resume-window {

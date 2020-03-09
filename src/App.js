@@ -28,7 +28,7 @@ class App extends Component {
       menu: false,
       aboutme: false,
       contact: false,
-      github: true,
+      github: false,
       resume: false,
       project1: false,
       project2: false,
@@ -38,7 +38,7 @@ class App extends Component {
       overview: false,
       skills: false,
       internet: false,
-      intro: true
+      intro: false
     };
   }
 
