@@ -8,7 +8,7 @@ import exit from "../resources/exit.png";
 const Intro = props => {
   return (
     <Rnd
-      style={{ zIndex: 0 }}
+      style={{ zIndex: 10 }}
       id="error-message"
       className="resume-window"
       default={{
@@ -37,8 +37,8 @@ const Intro = props => {
             </p>
             <p>&#8226; To start, click on start in the lower-left corner</p>
             <p>
-              &#8226; This window, and all other windows, can be closed by
-              clicking the 'X' in the right-upper corner
+              &#8226; This window can be closed by clicking the 'X' in the
+              right-upper corner
             </p>
             <p>
               &#8226; To see the source code of this portfolio, please visit{" "}

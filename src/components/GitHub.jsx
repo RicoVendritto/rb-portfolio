@@ -12,8 +12,8 @@ const GitHub = props => {
       style={{ zIndex: 1 }}
       className="resume-window"
       default={{
-        x: 100,
-        y: 100,
+        x: 10,
+        y: 10,
         width: 375,
         height: 460
       }}

@@ -9,10 +9,10 @@ const Project3 = props => {
       style={{ zIndex: 1 }}
       className="resume-window"
       default={{
-        x: 160,
-        y: 160,
-        width: 420,
-        height: 300
+        x: 100,
+        y: 100,
+        width: 840,
+        height: 600
       }}
     >
       <div className="option-bar">

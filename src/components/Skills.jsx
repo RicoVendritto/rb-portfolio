@@ -12,7 +12,7 @@ const Contact = props => {
       className="resume-window"
       default={{
         x: 250,
-        y: 200,
+        y: 220,
         width: 365,
         height: "45vh"
       }}

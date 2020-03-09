@@ -521,7 +521,7 @@ body {
 
   .skill-set {
     display: grid;
-    grid-template-columns: repeat(5, 5vw);
+    grid-template-columns: repeat(5, 20%);
     background-color: white;
     height: 88%;
     width: 100%;
@@ -535,6 +535,7 @@ body {
       color: $bsc-bckgrnd;
 
       span {
+        margin-top: 1vh;
         font-size: 0.45em;
         font-family: Arial, Helvetica, sans-serif;
       }
@@ -580,8 +581,10 @@ body {
     .text {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
+      padding: 1vh 1vw;
+      width: 100%;
 
       p {
         font-size: 1em;
