@@ -4,13 +4,14 @@ import { Rnd } from "react-rnd";
 // Custom Resources
 import welcome from "../resources/welcome.ico";
 import exit from "../resources/exit.png";
+import max from "../resources/max.png";
 
 const Intro = props => {
   return (
     <Rnd
       style={{ zIndex: 10 }}
       id="error-message"
-      className="resume-window"
+      className="intro-window"
       default={{
         x: 80,
         y: 15,
@@ -20,6 +21,12 @@ const Intro = props => {
     >
       <div className="option-bar">
         <img className="option-type" src={welcome} />
+        <img
+          className="option-max"
+          name="intro-window"
+          onClick={e => props.handleSize(e)}
+          src={max}
+        />
         <img
           className="option-close"
           name="intro"

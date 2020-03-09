@@ -4,6 +4,7 @@ import { Rnd } from "react-rnd";
 // Custom Resources
 import ieloader from "../resources/ieloader.ico";
 import exit from "../resources/exit.png";
+import max from "../resources/max.png";
 
 const Internet = props => {
   return (
@@ -19,6 +20,12 @@ const Internet = props => {
     >
       <div className="option-bar">
         <img className="option-type" src={ieloader} />
+        <img
+          className="option-max"
+          name="intro-window"
+          onClick={e => props.handleSize(e)}
+          src={max}
+        />
         <img
           className="option-close"
           name="internet"

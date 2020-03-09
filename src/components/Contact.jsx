@@ -7,6 +7,7 @@ import ContactForm from "./ContactForm";
 // Custom Resources
 import contactme from "../resources/contactme.ico";
 import exit from "../resources/exit.png";
+import max from "../resources/max.png";
 
 const Contact = props => {
   return (
@@ -22,6 +23,12 @@ const Contact = props => {
     >
       <div className="option-bar">
         <img className="option-type" src={contactme} />
+        <img
+          className="option-max"
+          name="intro-window"
+          onClick={e => props.handleSize(e)}
+          src={max}
+        />
         <img
           className="option-close"
           name="contact"

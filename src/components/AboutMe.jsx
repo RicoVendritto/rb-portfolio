@@ -5,6 +5,7 @@ import { Rnd } from "react-rnd";
 import me from "../resources/me.png";
 import aboutme from "../resources/aboutme.ico";
 import exit from "../resources/exit.png";
+import max from "../resources/max.png";
 
 // Fontawesome
 import { faAt } from "@fortawesome/free-solid-svg-icons";
@@ -34,6 +35,12 @@ const AboutMe = props => {
     >
       <div className="option-bar">
         <img className="option-type" src={aboutme} />
+        <img
+          className="option-max"
+          name="intro-window"
+          onClick={e => props.handleSize(e)}
+          src={max}
+        />
         <img
           className="option-close"
           name="aboutme"

@@ -2,6 +2,7 @@ import React from "react";
 import { Rnd } from "react-rnd";
 import github from "../resources/github.ico";
 import exit from "../resources/exit.png";
+import max from "../resources/max.png";
 
 // Custom Components
 import GitHubWidget from "./GitHubWidget";
@@ -20,6 +21,12 @@ const GitHub = props => {
     >
       <div className="option-bar">
         <img className="option-type" src={github} />
+        <img
+          className="option-max"
+          name="intro-window"
+          onClick={e => props.handleSize(e)}
+          src={max}
+        />
         <img
           className="option-close"
           name="github"

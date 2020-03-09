@@ -28,7 +28,7 @@ class App extends Component {
       menu: false,
       aboutme: false,
       contact: false,
-      github: false,
+      github: true,
       resume: false,
       project1: false,
       project2: false,
@@ -38,14 +38,9 @@ class App extends Component {
       overview: false,
       skills: false,
       internet: false,
-      intro: false
+      intro: true
     };
   }
-
-  // componentDidMount = () => {
-  //   const window = document.querySelector(".main-desktop");
-  //   window.addEventListener("click", this.closeStart);
-  // };
 
   closeStart = e => {
     if (e) {
@@ -59,8 +54,6 @@ class App extends Component {
   };
 
   onClick = e => {
-    console.log("onclick function");
-    console.log(e);
     const name = e.target.name;
     e.preventDefault();
     if (this.state[name]) {
@@ -74,6 +67,15 @@ class App extends Component {
     }
   };
 
+  handleSize = e => {
+    e.preventDefault();
+    const name = e.target.name;
+    const element = document.querySelector(`.${name}`);
+    element.style.height = "100%";
+    element.style.width = "100%";
+    element.style.transform = "translate(0, 0)";
+  };
+
   render() {
     return (
       <div className="App">
@@ -82,19 +84,45 @@ class App extends Component {
         {this.state.menu && (
           <Menu onClick={this.onClick} closeStart={this.closeStart} />
         )}
-        {this.state.contact && <Contact onClick={this.onClick} />}
-        {this.state.github && <GitHub onClick={this.onClick} />}
-        {this.state.resume && <Resume onClick={this.onClick} />}
-        {this.state.aboutme && <AboutMe onClick={this.onClick} />}
-        {this.state.project1 && <Project1 onClick={this.onClick} />}
-        {this.state.project2 && <Project2 onClick={this.onClick} />}
-        {this.state.project3 && <Project3 onClick={this.onClick} />}
-        {this.state.project4 && <Project4 onClick={this.onClick} />}
-        {this.state.project5 && <Project5 onClick={this.onClick} />}
-        {this.state.overview && <Overview onClick={this.onClick} />}
-        {this.state.skills && <Skills onClick={this.onClick} />}
-        {this.state.internet && <Internet onClick={this.onClick} />}
-        {this.state.intro && <Intro onClick={this.onClick} />}
+        {this.state.contact && (
+          <Contact onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.github && (
+          <GitHub onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.resume && (
+          <Resume onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.aboutme && (
+          <AboutMe onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.project1 && (
+          <Project1 onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.project2 && (
+          <Project2 onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.project3 && (
+          <Project3 onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.project4 && (
+          <Project4 onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.project5 && (
+          <Project5 onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.overview && (
+          <Overview onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.skills && (
+          <Skills onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.internet && (
+          <Internet onClick={this.onClick} handleSize={this.handleSize} />
+        )}
+        {this.state.intro && (
+          <Intro onClick={this.onClick} handleSize={this.handleSize} />
+        )}
       </div>
     );
   }

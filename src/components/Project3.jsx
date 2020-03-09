@@ -2,6 +2,7 @@ import React from "react";
 import { Rnd } from "react-rnd";
 import internet from "../resources/internet.ico";
 import exit from "../resources/exit.png";
+import max from "../resources/max.png";
 
 const Project3 = props => {
   return (
@@ -17,6 +18,12 @@ const Project3 = props => {
     >
       <div className="option-bar">
         <img className="option-type" src={internet} />
+        <img
+          className="option-max"
+          name="intro-window"
+          onClick={e => props.handleSize(e)}
+          src={max}
+        />
         <img
           className="option-close"
           name="project3"
