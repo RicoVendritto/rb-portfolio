@@ -34,18 +34,20 @@ const AboutMe = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={aboutme} />
+        <img className="option-type" src={aboutme} alt="about me"/>
         <img
           className="option-max"
           name="intro-window"
           onClick={e => props.handleSize(e)}
           src={max}
+          alt="max window"
         />
         <img
           className="option-close"
           name="aboutme"
           onClick={e => props.onClick(e)}
           src={exit}
+          alt="close window"
         />
       </div>
       <div className="sub-option-bar">

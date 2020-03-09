@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Rnd } from "react-rnd";
 
 // Custom Resources
@@ -19,18 +19,20 @@ const Internet = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={ieloader} />
+        <img className="option-type" src={ieloader} alt="ieloader" />
         <img
           className="option-max"
           name="intro-window"
           onClick={e => props.handleSize(e)}
           src={max}
+          alt="max window"
         />
         <img
           className="option-close"
           name="internet"
           onClick={e => props.onClick(e)}
           src={exit}
+          alt="exit window"
         />
       </div>
       <div className="sub-option-bar">
@@ -40,6 +42,7 @@ const Internet = props => {
       </div>
       <section className="internet-window">
         <iframe
+          title="internet-frame"
           className="internet-frame"
           src="https://richardbraamburg.me/archive/pixart/index.html"
         ></iframe>

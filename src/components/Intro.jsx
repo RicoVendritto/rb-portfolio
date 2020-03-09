@@ -20,18 +20,20 @@ const Intro = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={welcome} />
+        <img className="option-type" src={welcome} alt="welcome sign" />
         <img
           className="option-max"
           name="intro-window"
           onClick={e => props.handleSize(e)}
           src={max}
+          alt="max window"
         />
         <img
           className="option-close"
           name="intro"
           onClick={e => props.onClick(e)}
           src={exit}
+          alt="close window"
         />
       </div>
       <section className="intro-window">
@@ -52,7 +54,7 @@ const Intro = props => {
               <span>
                 <a
                   href="https://github.com/RicoVendritto/rb-portfolio"
-                  target="_blank"
+                  target="_blank noopener"
                 >
                   my GitHub
                 </a>

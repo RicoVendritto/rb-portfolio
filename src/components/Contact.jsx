@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Rnd } from "react-rnd";
 
 // Custom Components
@@ -22,18 +22,20 @@ const Contact = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={contactme} />
+        <img className="option-type" src={contactme} alt="contact" />
         <img
           className="option-max"
           name="intro-window"
           onClick={e => props.handleSize(e)}
           src={max}
+          alt="max window"
         />
         <img
           className="option-close"
           name="contact"
           onClick={e => props.onClick(e)}
           src={exit}
+          alt="exit window"
         />
       </div>
       <div className="sub-option-bar">

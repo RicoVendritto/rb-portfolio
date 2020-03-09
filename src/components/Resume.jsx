@@ -24,18 +24,20 @@ class Resume extends Component {
         }}
       >
         <div className="option-bar">
-          <img className="option-type" src={notepad} />
+          <img className="option-type" src={notepad} alt="resume" />
           <img
             className="option-max"
             name="intro-window"
-            onClick={e => props.handleSize(e)}
+            onClick={e => this.props.handleSize(e)}
             src={max}
+            alt="max window"
           />
           <img
             className="option-close"
             name="resume"
             onClick={e => this.props.onClick(e)}
             src={exit}
+            alt="exit window"
           />
         </div>
         <div className="sub-option-bar">
@@ -47,7 +49,7 @@ class Resume extends Component {
             Download
           </a>
         </div>
-        <iframe className="resume-frame" src={resume} />
+        <iframe title="resume" className="resume-frame" src={resume} />
       </Rnd>
     );
   }

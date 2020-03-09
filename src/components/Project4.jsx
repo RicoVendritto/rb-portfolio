@@ -17,37 +17,40 @@ const Project4 = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={internet} />
+        <img className="option-type" src={internet} alt="internet" />
         <img
           className="option-max"
           name="intro-window"
           onClick={e => props.handleSize(e)}
           src={max}
+          alt="max window"
         />
         <img
           className="option-close"
-          name="project4"
+          name="project1"
           onClick={e => props.onClick(e)}
           src={exit}
+          alt="close window"
         />
       </div>
       <div className="sub-option-bar">
         <a
           className="resume-download"
           href="https://d18x4f8ekbpqmh.cloudfront.net/"
-          target="_blank"
+          target="_blank noopener"
         >
           Project 4
         </a>
         <a
           className="github-source"
           href="https://github.com/RicoVendritto/Project-4"
-          target="_blank"
+          target="_blank noopener"
         >
           GitHub
         </a>
       </div>
       <iframe
+        title="project-4"
         className="project-window project4"
         src="https://d18x4f8ekbpqmh.cloudfront.net/"
       ></iframe>

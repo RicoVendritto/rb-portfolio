@@ -20,37 +20,40 @@ const Project5 = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={internet} />
+        <img className="option-type" src={internet} alt="internet" />
         <img
           className="option-max"
           name="intro-window"
           onClick={e => props.handleSize(e)}
           src={max}
+          alt="max window"
         />
         <img
           className="option-close"
-          name="project5"
+          name="project1"
           onClick={e => props.onClick(e)}
           src={exit}
+          alt="close window"
         />
       </div>
       <div className="sub-option-bar">
         <a
           className="resume-download"
           href="https://cornerbistro.surge.sh"
-          target="_blank"
+          target="_blank noopener"
         >
           UXDI Colab
         </a>
         <a
           className="github-source"
           href="https://github.com/RicoVendritto/Project_UX_SEI"
-          target="_blank"
+          target="_blank noopener"
         >
           GitHub
         </a>
       </div>
       <iframe
+        title="project-5"
         className="project-window project5"
         src="https://cornerbistro.surge.sh"
       ></iframe>

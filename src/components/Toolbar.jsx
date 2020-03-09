@@ -69,8 +69,13 @@ class Toolbar extends Component {
             onClick={e => this.handleClick()}
             className="sound-icon"
             src={this.state.soundIcon}
+            alt="sound icon"
           />
-          <img className="internet-icon" src={this.state.internetIcon} />
+          <img
+            className="internet-icon"
+            src={this.state.internetIcon}
+            alt="internet icon"
+          />
           <Clock />
         </div>
       </div>

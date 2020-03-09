@@ -17,38 +17,40 @@ const Project2 = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={internet} />
+        <img className="option-type" src={internet} alt="internet" />
         <img
           className="option-max"
           name="intro-window"
           onClick={e => props.handleSize(e)}
           src={max}
+          alt="max window"
         />
         <img
           className="option-close"
-          name="project2"
+          name="project1"
           onClick={e => props.onClick(e)}
           src={exit}
+          alt="close window"
         />
       </div>
       <div className="sub-option-bar">
         <a
           className="resume-download"
           href="https://cold-beer-stomach.surge.sh/"
-          target="_blank"
+          ttarget="_blank noopener"
         >
           Project 2
         </a>
         <a
           className="github-source"
           href="https://github.com/RicoVendritto/project-2"
-          Ï
-          target="_blank"
+          target="_blank noopener"
         >
           GitHub
         </a>
       </div>
       <iframe
+        title="project-2"
         className="project-window project2"
         src="https://cold-beer-stomach.surge.sh/"
       ></iframe>

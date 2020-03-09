@@ -20,25 +20,27 @@ const GitHub = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={github} />
+        <img className="option-type" src={github} alt="version control" />
         <img
           className="option-max"
           name="intro-window"
           onClick={e => props.handleSize(e)}
           src={max}
+          alt="max window"
         />
         <img
           className="option-close"
           name="github"
           onClick={e => props.onClick(e)}
           src={exit}
+          alt="close window"
         />
       </div>
       <div className="sub-option-bar">
         <a
           className="resume-download"
           href="https://github.com/RicoVendritto"
-          target="_blank"
+          target="_blank noopener"
         >
           GitHub
         </a>
@@ -46,7 +48,7 @@ const GitHub = props => {
       <div className="resume-frame">
         <GitHubWidget />
       </div>
-      <iframe className="resume-iframe-script">
+      <iframe className="resume-iframe-script" title="resume-iframe">
         <div id="github-card" data-username="RicoVendritto"></div>
         <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
       </iframe>

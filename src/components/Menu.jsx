@@ -65,7 +65,7 @@ class Menu extends Component {
             }}
           >
             <span>Projects</span>
-            <img className="menu-arrow" src={arrow} />
+            <img className="menu-arrow" src={arrow} alt="menu arrow" />
             {this.state.projectmenu && (
               <ProjectsMenu
                 onClick={this.props.onClick}
