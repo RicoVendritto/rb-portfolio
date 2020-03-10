@@ -10,7 +10,7 @@ const Internet = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
-      className="resume-window"
+      className="internet-window"
       default={{
         x: 0,
         y: 0,
@@ -22,7 +22,7 @@ const Internet = props => {
         <img className="option-type" src={ieloader} alt="ieloader" />
         <img
           className="option-max"
-          name="intro-window"
+          name="internet-window"
           onClick={e => props.handleSize(e)}
           src={max}
           alt="max window"

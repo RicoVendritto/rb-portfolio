@@ -25,7 +25,7 @@ const AboutMe = props => {
     <Rnd
       id="aboutme-window"
       style={{ zIndex: 1 }}
-      className="resume-window"
+      className="aboutme-window"
       default={{
         x: 100,
         y: 100,
@@ -37,7 +37,7 @@ const AboutMe = props => {
         <img className="option-type" src={aboutme} alt="about me"/>
         <img
           className="option-max"
-          name="intro-window"
+          name="aboutme-window"
           onClick={e => props.handleSize(e)}
           src={max}
           alt="max window"

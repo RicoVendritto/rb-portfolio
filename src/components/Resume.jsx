@@ -27,7 +27,7 @@ class Resume extends Component {
           <img className="option-type" src={notepad} alt="resume" />
           <img
             className="option-max"
-            name="intro-window"
+            name="resume-window"
             onClick={e => this.props.handleSize(e)}
             src={max}
             alt="max window"

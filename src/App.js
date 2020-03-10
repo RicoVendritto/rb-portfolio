@@ -28,7 +28,7 @@ class App extends Component {
       menu: false,
       aboutme: false,
       contact: false,
-      github: true,
+      github: true, 
       resume: false,
       project1: false,
       project2: false,

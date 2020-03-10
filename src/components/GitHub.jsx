@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Rnd } from "react-rnd";
 import github from "../resources/github.ico";
 import exit from "../resources/exit.png";
 import max from "../resources/max.png";
+import githublink from "../resources/github.png";
 
 // Custom Components
 import GitHubWidget from "./GitHubWidget";
@@ -11,7 +12,7 @@ const GitHub = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
-      className="resume-window"
+      className="github-window"
       default={{
         x: 10,
         y: 10,
@@ -23,7 +24,7 @@ const GitHub = props => {
         <img className="option-type" src={github} alt="version control" />
         <img
           className="option-max"
-          name="intro-window"
+          name="github-window"
           onClick={e => props.handleSize(e)}
           src={max}
           alt="max window"
@@ -46,7 +47,10 @@ const GitHub = props => {
         </a>
       </div>
       <div className="resume-frame">
-        <GitHubWidget />
+        <img className="githublink" src={githublink} alt="githublink" />
+        <Suspense fallback={<img src={githublink} alt="github" />}>
+          <GitHubWidget />
+        </Suspense>
       </div>
       <iframe className="resume-iframe-script" title="resume-iframe">
         <div id="github-card" data-username="RicoVendritto"></div>

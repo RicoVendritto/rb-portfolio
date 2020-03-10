@@ -10,7 +10,7 @@ const Contact = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
-      className="resume-window"
+      className="skills-window"
       default={{
         x: 250,
         y: 220,
@@ -22,7 +22,7 @@ const Contact = props => {
         <img className="option-type" src={skills} alt="skills" />
         <img
           className="option-max"
-          name="intro-window"
+          name="skills-window"
           onClick={e => props.handleSize(e)}
           src={max}
           alt="max window"

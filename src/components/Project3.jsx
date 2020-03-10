@@ -8,7 +8,7 @@ const Project3 = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
-      className="resume-window"
+      className="project3-window"
       default={{
         x: 100,
         y: 100,
@@ -20,14 +20,14 @@ const Project3 = props => {
         <img className="option-type" src={internet} alt="internet" />
         <img
           className="option-max"
-          name="intro-window"
+          name="project3-window"
           onClick={e => props.handleSize(e)}
           src={max}
           alt="max window"
         />
         <img
           className="option-close"
-          name="project1"
+          name="project3"
           onClick={e => props.onClick(e)}
           src={exit}
           alt="close window"
