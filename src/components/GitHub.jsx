@@ -47,7 +47,7 @@ const GitHub = props => {
         </a>
       </div>
       <div className="resume-frame">
-        <img className="githublink" src={githublink} alt="githublink" />
+        {/* <img className="githublink" src={githublink} alt="githublink" /> */}
         <Suspense fallback={<img src={githublink} alt="github" />}>
           <GitHubWidget />
         </Suspense>

@@ -45,7 +45,6 @@ const Project1 = props => {
           className="github-source"
           href="https://github.com/RicoVendritto/project_1"
           target="_blank noopener"
-          // rel="noopener"
         >
           GitHub
         </a>
