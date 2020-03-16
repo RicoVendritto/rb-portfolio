@@ -3,6 +3,7 @@ import { Rnd } from "react-rnd";
 import internet from "../resources/internet.ico";
 import exit from "../resources/exit.png";
 import max from "../resources/max.png";
+import min from "../resources/min.png";
 
 const Project4 = props => {
   return (
@@ -19,9 +20,16 @@ const Project4 = props => {
       <div className="option-bar">
         <img className="option-type" src={internet} alt="internet" />
         <img
+          className="option-min"
+          name="project4-window"
+          onClick={e => props.handleSizeMin(e)}
+          src={min}
+          alt="min window"
+        />
+        <img
           className="option-max"
           name="project4-window"
-          onClick={e => props.handleSize(e)}
+          onClick={e => props.handleSizeMax(e)}
           src={max}
           alt="max window"
         />

@@ -5,6 +5,7 @@ import { Rnd } from "react-rnd";
 import skills from "../resources/skills.ico";
 import exit from "../resources/exit.png";
 import max from "../resources/max.png";
+import min from "../resources/min.png";
 
 const Contact = props => {
   return (
@@ -21,9 +22,16 @@ const Contact = props => {
       <div className="option-bar">
         <img className="option-type" src={skills} alt="skills" />
         <img
+          className="option-min"
+          name="skills-window"
+          onClick={e => props.handleSizeMin(e)}
+          src={min}
+          alt="min window"
+        />
+        <img
           className="option-max"
           name="skills-window"
-          onClick={e => props.handleSize(e)}
+          onClick={e => props.handleSizeMax(e)}
           src={max}
           alt="max window"
         />

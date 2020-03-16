@@ -4,6 +4,7 @@ import { Rnd } from "react-rnd";
 import notepad from "../resources/notepad.ico";
 import exit from "../resources/exit.png";
 import max from "../resources/max.png";
+import min from "../resources/min.png";
 
 class Resume extends Component {
   constructor(props) {
@@ -26,9 +27,16 @@ class Resume extends Component {
         <div className="option-bar">
           <img className="option-type" src={notepad} alt="resume" />
           <img
+            className="option-min"
+            name="resume-window"
+            onClick={e => this.props.handleSizeMin(e)}
+            src={min}
+            alt="min window"
+          />
+          <img
             className="option-max"
             name="resume-window"
-            onClick={e => this.props.handleSize(e)}
+            onClick={e => this.props.handleSizeMax(e)}
             src={max}
             alt="max window"
           />

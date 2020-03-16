@@ -3,6 +3,7 @@ import { Rnd } from "react-rnd";
 import github from "../resources/github.ico";
 import exit from "../resources/exit.png";
 import max from "../resources/max.png";
+import min from "../resources/min.png";
 import githublink from "../resources/github.png";
 
 // Custom Components
@@ -24,9 +25,16 @@ const GitHub = props => {
       <div className="option-bar">
         <img className="option-type" src={github} alt="version control" />
         <img
+          className="option-min"
+          name="github-window"
+          onClick={e => props.handleSizeMin(e)}
+          src={min}
+          alt="min window"
+        />
+        <img
           className="option-max"
           name="github-window"
-          onClick={e => props.handleSize(e)}
+          onClick={e => props.handleSizeMax(e)}
           src={max}
           alt="max window"
         />
@@ -50,7 +58,7 @@ const GitHub = props => {
       <div className="resume-frame">
         {/* <img className="githublink" src={githublink} alt="githublink" /> */}
         {/* <Suspense fallback={<img src={githublink} alt="github" />}> */}
-          <GitHubWidget />
+        <GitHubWidget />
         {/* </Suspense> */}
       </div>
       {/* <iframe className="resume-iframe-script" title="resume-iframe">

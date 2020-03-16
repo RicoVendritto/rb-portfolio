@@ -360,6 +360,21 @@ body {
       pointer-events: click;
       cursor: pointer;
     }
+
+    .option-min {
+      position: absolute;
+      right: 46px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $prm-gray;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: click;
+      cursor: pointer;
+    }
   }
 
   .sub-option-bar {

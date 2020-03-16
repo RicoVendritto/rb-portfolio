@@ -8,6 +8,7 @@ import ContactForm from "./ContactForm";
 import contactme from "../resources/contactme.ico";
 import exit from "../resources/exit.png";
 import max from "../resources/max.png";
+import min from "../resources/min.png";
 
 const Contact = props => {
   return (
@@ -24,9 +25,16 @@ const Contact = props => {
       <div className="option-bar">
         <img className="option-type" src={contactme} alt="contact" />
         <img
+          className="option-min"
+          name="contact-window"
+          onClick={e => props.handleSizeMin(e)}
+          src={min}
+          alt="min window"
+        />
+        <img
           className="option-max"
           name="contact-window"
-          onClick={e => props.handleSize(e)}
+          onClick={e => props.handleSizeMax(e)}
           src={max}
           alt="max window"
         />

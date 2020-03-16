@@ -28,7 +28,7 @@ class App extends Component {
       menu: false,
       aboutme: false,
       contact: false,
-      github: true, 
+      github: true,
       resume: false,
       project1: false,
       project2: false,
@@ -67,13 +67,22 @@ class App extends Component {
     }
   };
 
-  handleSize = e => {
+  handleSizeMax = e => {
     e.preventDefault();
     const name = e.target.name;
     const element = document.querySelector(`.${name}`);
     element.style.height = "100%";
     element.style.width = "100%";
     element.style.transform = "translate(0, 0)";
+  };
+
+  handleSizeMin = e => {
+    e.preventDefault();
+    const name = e.target.name;
+    const element = document.querySelector(`.${name}`);
+    element.style.height = "10%";
+    element.style.width = "10%";
+    element.style.transform = "translate(100, 100)";
   };
 
   render() {
@@ -85,43 +94,95 @@ class App extends Component {
           <Menu onClick={this.onClick} closeStart={this.closeStart} />
         )}
         {this.state.contact && (
-          <Contact onClick={this.onClick} handleSize={this.handleSize} />
+          <Contact
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.github && (
-          <GitHub onClick={this.onClick} handleSize={this.handleSize} />
+          <GitHub
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.resume && (
-          <Resume onClick={this.onClick} handleSize={this.handleSize} />
+          <Resume
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.aboutme && (
-          <AboutMe onClick={this.onClick} handleSize={this.handleSize} />
+          <AboutMe
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.project1 && (
-          <Project1 onClick={this.onClick} handleSize={this.handleSize} />
+          <Project1
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.project2 && (
-          <Project2 onClick={this.onClick} handleSize={this.handleSize} />
+          <Project2
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.project3 && (
-          <Project3 onClick={this.onClick} handleSize={this.handleSize} />
+          <Project3
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.project4 && (
-          <Project4 onClick={this.onClick} handleSize={this.handleSize} />
+          <Project4
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.project5 && (
-          <Project5 onClick={this.onClick} handleSize={this.handleSize} />
+          <Project5
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.overview && (
-          <Overview onClick={this.onClick} handleSize={this.handleSize} />
+          <Overview
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.skills && (
-          <Skills onClick={this.onClick} handleSize={this.handleSize} />
+          <Skills
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.internet && (
-          <Internet onClick={this.onClick} handleSize={this.handleSize} />
+          <Internet
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
         {this.state.intro && (
-          <Intro onClick={this.onClick} handleSize={this.handleSize} />
+          <Intro
+            onClick={this.onClick}
+            handleSizeMax={this.handleSizeMax}
+            handleSizeMin={this.handleSizeMin}
+          />
         )}
       </div>
     );

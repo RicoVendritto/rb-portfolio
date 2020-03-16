@@ -5,6 +5,7 @@ import { Rnd } from "react-rnd";
 import ieloader from "../resources/ieloader.ico";
 import exit from "../resources/exit.png";
 import max from "../resources/max.png";
+import min from "../resources/min.png";
 
 const Internet = props => {
   return (
@@ -21,9 +22,16 @@ const Internet = props => {
       <div className="option-bar">
         <img className="option-type" src={ieloader} alt="ieloader" />
         <img
+          className="option-min"
+          name="internet-window"
+          onClick={e => props.handleSizeMin(e)}
+          src={min}
+          alt="min window"
+        />
+        <img
           className="option-max"
           name="internet-window"
-          onClick={e => props.handleSize(e)}
+          onClick={e => props.handleSizeMax(e)}
           src={max}
           alt="max window"
         />

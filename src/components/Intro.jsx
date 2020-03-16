@@ -5,6 +5,7 @@ import { Rnd } from "react-rnd";
 import welcome from "../resources/welcome.ico";
 import exit from "../resources/exit.png";
 import max from "../resources/max.png";
+import min from "../resources/min.png";
 
 const Intro = props => {
   return (
@@ -22,9 +23,16 @@ const Intro = props => {
       <div className="option-bar">
         <img className="option-type" src={welcome} alt="welcome sign" />
         <img
+          className="option-min"
+          name="intro-window"
+          onClick={e => props.handleSizeMin(e)}
+          src={min}
+          alt="min window"
+        />
+        <img
           className="option-max"
           name="intro-window"
-          onClick={e => props.handleSize(e)}
+          onClick={e => props.handleSizeMax(e)}
           src={max}
           alt="max window"
         />

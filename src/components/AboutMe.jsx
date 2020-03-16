@@ -6,6 +6,7 @@ import me from "../resources/me.png";
 import aboutme from "../resources/aboutme.ico";
 import exit from "../resources/exit.png";
 import max from "../resources/max.png";
+import min from "../resources/min.png";
 
 // Fontawesome
 import { faAt } from "@fortawesome/free-solid-svg-icons";
@@ -34,11 +35,18 @@ const AboutMe = props => {
       }}
     >
       <div className="option-bar">
-        <img className="option-type" src={aboutme} alt="about me"/>
+        <img className="option-type" src={aboutme} alt="about me" />
+        <img
+          className="option-min"
+          name="aboutme-window"
+          onClick={e => props.handleSizeMin(e)}
+          src={min}
+          alt="min window"
+        />
         <img
           className="option-max"
           name="aboutme-window"
-          onClick={e => props.handleSize(e)}
+          onClick={e => props.handleSizeMax(e)}
           src={max}
           alt="max window"
         />
