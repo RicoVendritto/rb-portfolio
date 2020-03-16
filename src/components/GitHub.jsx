@@ -7,6 +7,7 @@ import githublink from "../resources/github.png";
 
 // Custom Components
 import GitHubWidget from "./GitHubWidget";
+// const GitHubWidget = React.lazy(() => import("./GitHubWidget"));
 
 const GitHub = props => {
   return (
@@ -48,14 +49,14 @@ const GitHub = props => {
       </div>
       <div className="resume-frame">
         {/* <img className="githublink" src={githublink} alt="githublink" /> */}
-        <Suspense fallback={<img src={githublink} alt="github" />}>
+        {/* <Suspense fallback={<img src={githublink} alt="github" />}> */}
           <GitHubWidget />
-        </Suspense>
+        {/* </Suspense> */}
       </div>
-      <iframe className="resume-iframe-script" title="resume-iframe">
+      {/* <iframe className="resume-iframe-script" title="resume-iframe">
         <div id="github-card" data-username="RicoVendritto"></div>
         <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
-      </iframe>
+      </iframe> */}
     </Rnd>
   );
 };
