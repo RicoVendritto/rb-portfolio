@@ -8,7 +8,7 @@ const Project4 = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
-      className="project4-window"
+      className="project4-window rnd-window"
       default={{
         x: 120,
         y: 120,

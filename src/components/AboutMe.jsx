@@ -25,7 +25,7 @@ const AboutMe = props => {
     <Rnd
       id="aboutme-window"
       style={{ zIndex: 1 }}
-      className="aboutme-window"
+      className="aboutme-window rnd-window"
       default={{
         x: 100,
         y: 100,

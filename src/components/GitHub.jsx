@@ -13,7 +13,7 @@ const GitHub = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
-      className="github-window"
+      className="github-window rnd-window"
       default={{
         x: 10,
         y: 10,

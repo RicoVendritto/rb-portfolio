@@ -10,7 +10,7 @@ const Internet = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
-      className="internet-window"
+      className="internet-window rnd-window"
       default={{
         x: 0,
         y: 0,

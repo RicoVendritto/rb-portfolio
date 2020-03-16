@@ -10,7 +10,7 @@ const Contact = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
-      className="skills-window"
+      className="skills-window rnd-window"
       default={{
         x: 250,
         y: 220,

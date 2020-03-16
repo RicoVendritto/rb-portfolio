@@ -11,7 +11,7 @@ const Intro = props => {
     <Rnd
       style={{ zIndex: 10 }}
       id="error-message"
-      className="intro-window"
+      className="intro-window rnd-window"
       default={{
         x: 80,
         y: 15,

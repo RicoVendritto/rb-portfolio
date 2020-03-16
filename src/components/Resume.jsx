@@ -15,7 +15,7 @@ class Resume extends Component {
     return (
       <Rnd
         style={{ zIndex: 1 }}
-        className="resume-window"
+        className="resume-window rnd-window"
         default={{
           x: 100,
           y: 100,

@@ -297,18 +297,7 @@ body {
   }
 }
 
-.resume-window,
-.intro-window,
-.aboutme-window,
-.contact-window,
-.github-window,
-.internet-window,
-.project1-window,
-.project2-window,
-.project3-window,
-.project4-window,
-.project5-window,
-.skills-window {
+.rnd-window {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

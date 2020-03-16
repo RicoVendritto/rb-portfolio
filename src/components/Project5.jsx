@@ -11,7 +11,7 @@ const Project5 = props => {
   return (
     <Rnd
       style={{ zIndex: 1 }}
-      className="project5-window"
+      className="project5-window rnd-window"
       default={{
         x: 140,
         y: 140,
