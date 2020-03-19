@@ -75,7 +75,7 @@ const AboutMe = props => {
             </div>
             <div className="details">
               <i>{phone}</i>
-              <a href="tel:+19293546496">Call me</a>
+              <a href="tel:+19292244416">Call me</a>
             </div>
             <div className="details">
               <i>{skype}</i>
@@ -95,12 +95,7 @@ const AboutMe = props => {
         </div>
         <div className="aboutme-text">
           <p>
-            I am an affable Software Developer and Solutions Engineer who holds
-            over five years of experience understanding and resolving the needs
-            of the clients I support. In both creating user-centric websites and
-            managing relationships with large clients, I love dissecting complex
-            information and strategically communicating important takeaways to
-            both technical and non-technical stakeholders.
+          I am a bilingual (English and Dutch) Software Developer and Solutions Engineer who holds over five years of experience understanding and resolving the needs of the clients. In both creating user-centric websites and managing relationships with large clients, I love strategically communicating important takeaways to both technical and non-technical stakeholders.
           </p>
         </div>
       </div>
