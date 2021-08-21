@@ -11,6 +11,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@webcomponents/webcomponentsjs": "^2.4.2",
+    "all": "0.0.0",
     "bootstrap": "^4.4.1",
     "drag-resize-forvue": "^1.0.1",
     "emailjs-com": "^2.4.1",
