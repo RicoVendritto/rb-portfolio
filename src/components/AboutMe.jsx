@@ -21,7 +21,7 @@ const phone = <FontAwesomeIcon icon={faPhoneSquareAlt} />;
 const skype = <FontAwesomeIcon icon={faSkype} />;
 const github = <FontAwesomeIcon icon={faGithubSquare} />;
 
-const AboutMe = props => {
+const AboutMe = (props) => {
   return (
     <Rnd
       id="aboutme-window"
@@ -31,7 +31,7 @@ const AboutMe = props => {
         x: 100,
         y: 100,
         width: 500,
-        height: 500
+        height: 500,
       }}
     >
       <div className="option-bar">
@@ -39,21 +39,21 @@ const AboutMe = props => {
         <img
           className="option-min"
           name="aboutme-window"
-          onClick={e => props.handleSizeMin(e)}
+          onClick={(e) => props.handleSizeMin(e)}
           src={min}
           alt="min window"
         />
         <img
           className="option-max"
           name="aboutme-window"
-          onClick={e => props.handleSizeMax(e)}
+          onClick={(e) => props.handleSizeMax(e)}
           src={max}
           alt="max window"
         />
         <img
           className="option-close"
           name="aboutme"
-          onClick={e => props.onClick(e)}
+          onClick={(e) => props.onClick(e)}
           src={exit}
           alt="close window"
         />
@@ -95,7 +95,12 @@ const AboutMe = props => {
         </div>
         <div className="aboutme-text">
           <p>
-          I am a bilingual (English and Dutch) Software Developer and Solutions Engineer who holds over five years of experience understanding and resolving the needs of the clients. In both creating user-centric websites and managing relationships with large clients, I love strategically communicating important takeaways to both technical and non-technical stakeholders.
+            I am a bilingual (English and Dutch) Software Developer and
+            Solutions Engineer who holds over five years of experience
+            understanding and resolving the needs of the clients. In both
+            creating user-centric websites and managing relationships with large
+            clients, I love strategically communicating important takeaways to
+            both technical and non-technical stakeholders.
           </p>
         </div>
       </div>
