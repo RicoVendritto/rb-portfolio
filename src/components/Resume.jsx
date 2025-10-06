@@ -21,7 +21,7 @@ class Resume extends Component {
           x: 100,
           y: 100,
           width: 550,
-          height: 800
+          height: 800,
         }}
       >
         <div className="option-bar">
@@ -29,31 +29,27 @@ class Resume extends Component {
           <img
             className="option-min"
             name="resume-window"
-            onClick={e => this.props.handleSizeMin(e)}
+            onClick={(e) => this.props.handleSizeMin(e)}
             src={min}
             alt="min window"
           />
           <img
             className="option-max"
             name="resume-window"
-            onClick={e => this.props.handleSizeMax(e)}
+            onClick={(e) => this.props.handleSizeMax(e)}
             src={max}
             alt="max window"
           />
           <img
             className="option-close"
             name="resume"
-            onClick={e => this.props.onClick(e)}
+            onClick={(e) => this.props.onClick(e)}
             src={exit}
             alt="exit window"
           />
         </div>
         <div className="sub-option-bar">
-          <a
-            className="resume-download"
-            href={resume}
-            download="Richard Braamburg Resume"
-          >
+          <a className="resume-download" href={resume} download={resume}>
             Download
           </a>
         </div>
